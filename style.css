@@ -1,3 +1,5 @@
+
+/*Header Section*/ 
 *{padding: 0; margin:0; box-sizing: border-box; font-family: sans-serif;}
 header{
 	width: 100%;
@@ -26,14 +28,15 @@ nav{
 	text-decoration: none;
 	color: white;;
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: normal;
 	padding: 10px;
 	margin: 10px;
+	transition: all 1s ease-out;
 }
 
-
 .menu a:hover{
-	font-size: 25px;
+	font-size: 20px;
+	font-weight: bold;
 	border-bottom: 2px solid #74b9ff;
 }
 .icon img{
@@ -65,13 +68,23 @@ nav{
 	background: transparent;
 	padding: 10px 20px;
 	color: #74b9ff;
+	font-weight: bold;
 	border: 1px solid #74b9ff;
 	border-radius: 8px;
+	transition: all 1s ease-out;
 }
 .btn:hover{
+	border: 1px solid white;
 	background-color: #74b9ff;
 	color: white;
+	font-weight: bold;
+	transition: all 1s ease-out;
 }
+.fab:hover{
+	opacity: 0.8;
+	transition: all 1s ease-out;
+}
+/* About us */
 #about{
 	padding: 100px 0px;
 }
@@ -106,7 +119,12 @@ nav{
 	text-align: justify;
 	margin:15px 0px;
 }
-
+.List{
+	margin-left: 50px;
+	font-size: 20px;
+	color: #74b9ff;
+	font-weight: bold;
+}
 
 .c-btn{
 	padding: 10px;
@@ -114,10 +132,14 @@ nav{
 	color: white;
 	border: none;
 	background: #74b9ff;
+	transition: all 1s ease-out;
 }
 .c-btn:hover{
 	opacity: 0.5;
-	background-color: black;
+	background-color: white;
+	color: #74b9ff;
+	border: 2px solid #74b9ff;
+	font-weight: bold;
 }
 
 #signup{
@@ -164,8 +186,15 @@ nav{
 	font-size: 50px;
 }
 .services-info p{
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: bold;
+}
+.service-box-details{
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: serif;
+	color: #5e5e5e;
 }
 .services-row{
 	display: grid;
@@ -175,18 +204,31 @@ nav{
 	justify-content: center;
 	padding-top: 20px;
 }
+.service-box-text{
+	font-size: 30px;
+	font-weight: bold;
+	color: #5e5e5e;
+}
 .services-box{
 	box-shadow: 2px 3px 5px grey;
 	padding: 10px;
 	text-align: center;
-
+	background-color: #d8e6eb;
+	transition: all 1s ease-out;
+}
+.services-box:hover{
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 5px 10px #888888
 }
 .services-box i{
 	background: #0984e3;
 	color: white;
-	font-size: 30px;
+	font-size: 40px;
 	padding: 10px;
 	margin-top: -20px;
+	border: 1px solid gray;
+	opacity: 0.9;
 }
 
 #members{
@@ -201,12 +243,23 @@ nav{
 	padding-top: 50px;
 	width: 50%;
 	margin:auto;
-	}
-
+}
+.member-card img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 5px outset lightgrey;
+	transition: transform .7s ease-in-out;
+}
+.member-card img:hover{
+	transform: rotate(360deg);
+}
 .member-card p{
+	font-family: arial;
 	margin:20px 0px;
 }
 .member-card h2{
+	font-size: 25px;
 	margin:20px 0px;
 }
 
@@ -223,6 +276,7 @@ nav{
 .work-box img{
 	width: 100%;
 	height: 100%;
+	transition: all 1s ease-out;
 }
 
 .work-box:hover{
@@ -251,14 +305,30 @@ nav{
 .contact-right-col i{
 	font-size: 20px;
 	padding: 10px;
+	margin-left: -10px;
 	background:#74b9ff;
 	color: white; 
+	border: 1px solid #ededed;
+	border-radius: 30px;
 }
 .contact-right-col p{
+	font-size: 20px;
 	margin-top: 10px;
+	font-weight: bold;
 	margin-bottom: 20px;
+	color: #74b9ff;
 }
-
+.contact-right-col span{
+	font-weight: bold;
+	font-size: 25px;
+	margin-left: 5px;
+	transition: all 0.2s ease-out;
+}
+.contact-right-col span:hover{
+	margin-right: 5px;
+	border-bottom: 5px dotted #74b9ff;
+	border-right: 5px dotted #74b9ff;
+}
 
 #footer{
 	background: black;
@@ -296,8 +366,6 @@ textarea{
 	padding: 10px;
 	margin-bottom: 10px;
 }
-
-
 
 .c_btn{
 	background: black;
