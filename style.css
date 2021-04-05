@@ -32,7 +32,8 @@ nav{
 }
 
 
-.menu a:first-child{
+.menu a:hover{
+	font-size: 25px;
 	border-bottom: 2px solid #74b9ff;
 }
 .icon img{
@@ -66,6 +67,10 @@ nav{
 	color: #74b9ff;
 	border: 1px solid #74b9ff;
 	border-radius: 8px;
+}
+.btn:hover{
+	background-color: #74b9ff;
+	color: white;
 }
 #about{
 	padding: 100px 0px;
@@ -110,6 +115,10 @@ nav{
 	border: none;
 	background: #74b9ff;
 }
+.c-btn:hover{
+	opacity: 0.5;
+	background-color: black;
+}
 
 #signup{
 	padding-top: 50px;
@@ -135,10 +144,10 @@ nav{
 }
 
 .signup-right-col h1{
-	font-size: 90px;
+	font-size: 50px;
 }
 .signup-right-col h2{
-	font-size: 45px;
+	font-size: 25px;
 	letter-spacing: 60px;
 	color: rgba(0,0,0,0.3);
 	margin:10px 0px;
@@ -214,6 +223,11 @@ nav{
 .work-box img{
 	width: 100%;
 	height: 100%;
+}
+
+.work-box:hover{
+	background-color: lightblue;
+	opacity: 0.2;
 }
 
 #contact{
@@ -292,8 +306,3 @@ textarea{
 	width: 50%;
 	border:none;
 }
-
-
-
-
-
